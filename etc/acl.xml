@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Ace_B2bRegistration::config_b2bregistration" title="Ace Extensions"/>
+                        </resource>
+                    </resource>
+                </resource>
+                <resource id="Magento_Customer::customer">
+                    <resource id="Magento_Customer::manage">
+                        <resource id="Ace_B2bRegistration::b2bregistration" title="B2bRegistration" sortOrder="100">
+                            <resource id="Ace_B2bRegistration::b2bregistration_approval" title="Ace Extensions"/>
+                            <resource id="Ace_B2bRegistration::b2bregistration_reject" title="Ace Extensions"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
