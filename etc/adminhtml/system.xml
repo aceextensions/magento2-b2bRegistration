@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ace" translate="label" sortOrder="100">
+            <label>Abdulwahed</label>
+        </tab>
+        <section id="b2bregistration" translate="label" sortOrder="222" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>B2B Registration</label>
+            <tab>ace</tab>
+            <resource>Ace_B2bRegistration::config_b2bregistration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enable Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Version 1.0.9]]></comment>
+                </field>
+            </group>
+            <group id="register" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Register Settings</label>
+                <field id="b2b_url" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>B2B Account Page Url</label>
+                    <comment>Admin Default: b2b-customer-create, Frontend Default: b2b-customer-create.html .</comment>
+                </field>
+                <field id="shortcut_link" translate="label" type="select" sortOrder="3" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Shortcut Link In Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="shortcut_link_text" translate="label" type="text" sortOrder="4" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Shortcut Link Text</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="b2bregistration/general/shortcut_link" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Form Title</label>
+                    <validate>required-entry</validate>
+                    <comment>The Title of B2B Account Page.</comment>
+                </field>
+                <field id="date" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Date of Birth Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="tax" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Tax/VAT Number Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="gender" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Gender Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="address" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Address Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="prefix" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Prefix Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>The title that goes before name (Mr., Mrs., etc.)</comment>
+                </field>
+                <field id="prefix_options" translate="label comment" sortOrder="11" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Prefix Dropdown Options</label>
+                    <depends>
+                        <field id="b2bregistration/register/prefix" separator=",">1</field>
+                    </depends>
+                    <comment>
+                        <![CDATA[Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.]]>
+                    </comment>
+                </field>
+                <field id="suffix" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Suffix Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>The suffix that goes after name (Jr., Sr., etc.)</comment>
+                </field>
+                <field id="suffix_options" translate="label comment" sortOrder="13" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Suffix Dropdown Options</label>
+                    <depends>
+                        <field id="b2bregistration/register/suffix" separator=",">1</field>
+                    </depends>
+                    <comment>
+                        <![CDATA[Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.]]>
+                    </comment>
+                </field>
+                <field id="middle" translate="label" type="select" sortOrder="14" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Add Middle Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Always optional.]]></comment>
+                </field>
+                <field id="customer_group" translate="label" type="select" sortOrder="15" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Default Customer Group</label>
+                    <source_model>Ace\B2bRegistration\Model\Config\Source\Group</source_model>
+                </field>
+                <field id="regular_registration" translate="label" type="select" sortOrder="16" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Disable Regular Registration</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="approval" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Approval Settings</label>
+                <field id="auto_approval" translate="label" type="select" sortOrder="1" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Auto Approve Accounts</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Auto approve accounts when customers register.</comment>
+                </field>
+                <field id="pending_message" translate="label" type="text" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Pending Message</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="disapprove_message" translate="label" type="text" sortOrder="3" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Disapproval Message</label>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+            <group id="admin_notification" translate="label" type="text" sortOrder="4" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Admin Email Settings</label>
+                <field id="admin_notification_enable" translate="label" type="select" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="admin_email_sender" translate="label" type="select" sortOrder="3" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Email Sender</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Identity</source_model>
+                    <depends>
+                        <field id="b2bregistration/admin_notification/admin_notification_enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="admin_recipeints" translate="label" type="text" sortOrder="4" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Recipients</label>
+                    <validate>required-entry</validate>
+                    <comment>Email recipients, separated by commas.</comment>
+                    <depends>
+                        <field id="b2bregistration/admin_notification/admin_notification_enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="admin_email_templates" translate="label" type="select" sortOrder="3" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Email Templates</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Email template chosen based on theme fallback when "Default" option is selected.</comment>
+                    <depends>
+                        <field id="b2bregistration/admin_notification/admin_notification_enable" separator=",">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="email_setting" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Customer Email Setting</label>
+                <field id="customer_email_enable" translate="label" type="select" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="customer_email_sender" translate="label" type="select" sortOrder="3" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Email Sender</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Identity</source_model>
+                    <depends>
+                        <field id="b2bregistration/email_setting/customer_email_enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="customer_approve_templates" translate="label" type="select" sortOrder="4" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Approval Email Templates</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Email template chosen based on theme fallback when "Default" option is selected.</comment>
+                    <depends>
+                        <field id="b2bregistration/email_setting/customer_email_enable" separator=",">1</field>
+                    </depends>
+                </field>
+                <field id="customer_disapprove_templates" translate="label" type="select" sortOrder="5"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disapproval Email Templates</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Email template chosen based on theme fallback when "Default" option is selected.</comment>
+                    <depends>
+                        <field id="b2bregistration/email_setting/customer_email_enable" separator=",">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
