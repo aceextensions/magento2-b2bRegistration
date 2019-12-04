@@ -1,0 +1,8 @@
+<!--@subject Your account has been disapproved  @-->
+{{template config_path="design/email/header_template"}}
+<table>
+    <tr>{{trans "Hi %name," name=$varName}}</tr>
+    <tr>{{trans "Thanks for your interest in our website. Unfortunately, we are unable to approve your account: %account." account=$varEmail}}</tr>
+    <tr>Please contact us for more information.</tr>
+</table>
+{{template config_path="design/email/footer_template"}}

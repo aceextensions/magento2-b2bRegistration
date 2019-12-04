@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Layout\Generic">
+        <plugin name="ace_customer_listing_add_massaction" type="Ace\B2bRegistration\Plugin\CustomerListing"/>
+    </type>
+</config>

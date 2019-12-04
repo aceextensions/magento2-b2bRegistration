@@ -1,0 +1,78 @@
+<?php
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+// @codingStandardsIgnoreFile
+?>
+<?php
+/**
+ * Authorization Link block template
+ *
+ * @var Ace\B2bRegistration\Block\Account\AuthorizationLink $block
+ */
+?>
+<?php
+$dataPostParam = '';
+$enableShortCut = $block->isEnableShortcutLink();
+$shortCutLinkText = $block->getShortcutLinkText();
+$b2bCreateUrl = $block->getUrlB2bAccountCreate();
+$enable = $block->isEnable();
+?>
+<?php if ($block->checkForceLoginInstall()) : ?>
+    <?php
+    $enableForceLogin = $block->isEnableForceLogin();
+    $enableRegister = $block->getEnableRegister();
+    if ($block->isLoggedIn()) {
+        $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+    }
+    ?>
+    <?php if ($enableRegister && $enableForceLogin): ?>
+    <?php elseif ($enable && $enableShortCut && !$block->isLoggedIn()): ?>
+        <li class="ace-b2b-customer">
+            <a href="<?php echo $b2bCreateUrl; ?>">
+                <?php echo $shortCutLinkText; ?>
+            </a>
+        </li>
+    <?php endif; ?>
+
+    <li class="authorization-link"
+        data-label="<?php
+        if ($enableRegister && $enableForceLogin):
+
+        else:
+            echo $block->escapeHtml(__('or'));
+        endif;
+        ?>">
+        <a <?php /* @escapeNotVerified */
+        echo $block->getLinkAttributes(); ?><?php /* @escapeNotVerified */
+        echo $dataPostParam; ?>>
+            <?php echo $block->escapeHtml($block->getLabel()); ?>
+        </a>
+    </li>
+<?php else : ?>
+    <?php
+    if ($block->isLoggedIn()) {
+        $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+    }
+    ?>
+    <?php if ($enable && $enableShortCut && !$block->isLoggedIn()): ?>
+        <li class="ace-b2b-customer">
+            <a href="<?php echo $b2bCreateUrl; ?>">
+                <?php echo $shortCutLinkText; ?>
+            </a>
+        </li>
+    <?php endif; ?>
+    <li class="authorization-link" data-label="<?php echo __('or'); ?>">
+        <a <?php /* @noEscape */
+        echo $block->getLinkAttributes(); ?><?php /* @noEscape */
+        echo $dataPostParam; ?>>
+            <?php echo $block->escapeHtml($block->getLabel()); ?>
+        </a>
+    </li>
+<?php endif; ?>
+

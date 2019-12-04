@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="b2bregistration_admin_notification_admin_email_templates" label="Admin Email Template"
+              file="admin_email.html" type="html" module="Ace_B2bRegistration" area="frontend"/>
+    <template id="b2bregistration_email_setting_customer_approve_templates" label="Approve Email Template"
+              file="customer_approve_email.html" type="html" module="Ace_B2bRegistration" area="frontend"/>
+    <template id="b2bregistration_email_setting_customer_disapprove_templates" label="Disapprove Email Template"
+              file="customer_disapprove_email.html" type="html" module="Ace_B2bRegistration" area="frontend"/>
+</config>

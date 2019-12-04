@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <b2bregistration>
+            <general>
+                <enable>1</enable>
+            </general>
+            <register>
+                <b2b_url>b2b-customer-create</b2b_url>
+                <shortcut_link>1</shortcut_link>
+                <shortcut_link_text>Create B2B Account</shortcut_link_text>
+                <title>Create New B2B Customer Account</title>
+                <date>1</date>
+                <tax>1</tax>
+                <gender>1</gender>
+                <address>1</address>
+                <customer_group>2</customer_group>
+            </register>
+            <approval>
+                <auto_approval>0</auto_approval>
+                <pending_message>Please give us time to verify your account. Thanks for visiting us.</pending_message>
+                <disapprove_message>Something went wrong with your account! Please contact us for more information.
+                </disapprove_message>
+            </approval>
+            <admin_notification>
+                <admin_notification_enable>1</admin_notification_enable>
+            </admin_notification>
+            <email_setting>
+                <customer_email_enable>1</customer_email_enable>
+            </email_setting>
+        </b2bregistration>
+    </default>
+</config>

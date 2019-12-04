@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ace\B2bRegistration\Block\CustomerRegister" name="ace-register"
+                   template="Ace_B2bRegistration::account/register.phtml">
+                <block class="Magento\Customer\Block\Widget\Dob" name="ace-register-dob" as="ace.register.dob"
+                       template="Magento_Customer::widget/dob.phtml"/>
+                <block class="Magento\Customer\Block\Widget\Taxvat" name="ace-register-taxvat" as="ace.register.taxvat"
+                       template="Magento_Customer::widget/taxvat.phtml"/>
+                <block class="Magento\Customer\Block\Widget\Gender" name="ace-register-gender" as="ace.register.gender"
+                       template="Magento_Customer::widget/gender.phtml"/>
+                <container name="ace.form.additional.info" as="ace.form.additional.info"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

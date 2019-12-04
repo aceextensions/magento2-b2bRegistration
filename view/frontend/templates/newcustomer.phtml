@@ -1,0 +1,47 @@
+<?php
+/**
+ * Ace Extensions
+ *
+ * @category   Ace
+ * @package    Ace_B2bRegistration
+ * @author     Durga Shankar Gupta (dsguptas@gmail.com)
+ * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ */
+// @codingStandardsIgnoreFile
+?>
+<?php
+/**
+ * New Customer block template
+ *
+ * @var \Ace\B2bRegistration\Block\Form\Login\Info $block
+ */
+?>
+<?php
+$enable = $block->isEnable();
+$enableShortCut = $block->isEnableShortcutLink();
+$shortCutLinkText = $block->getShortcutLinkText();
+$b2bCreateUrl = $block->getUrlB2bAccountCreate();
+?>
+<div class="block block-new-customer">
+    <div class="block-title">
+        <strong id="block-new-customer-heading" role="heading"
+                aria-level="2"><?php echo $block->escapeHtml(__('New Customers')) ?></strong>
+    </div>
+    <div class="block-content" aria-labelledby="block-new-customer-heading">
+        <p><?php echo $block->escapeHtml(__('Creating an account has many benefits: check out faster, keep more than one address, track orders and more.')) ?></p>
+        <div class="actions-toolbar">
+            <?php if ($enable && $block->getRegistration()->isAllowed()): ?>
+                <div class="primary">
+                    <a href="<?php echo $block->escapeUrl($block->getCreateAccountUrl()) ?>"
+                       class="action create primary"><span><?php echo $block->escapeHtml(__('Create an Account')) ?></span></a>
+                </div>
+            <?php endif; ?>
+            <?php if ($enable && $enableShortCut): ?>
+                <div class="second-primary">
+                    <a href="<?php echo $block->escapeUrl($b2bCreateUrl) ?>"
+                       class="action create primary"><span><?php echo $block->escapeHtml(__($shortCutLinkText)) ?></span></a>
+                </div>
+            <?php endif ?>
+        </div>
+    </div>
+</div>

@@ -35,7 +35,7 @@
  - Flush the cache by running `php bin/magento cache:flush`
 
 ### Direct from gitHub
-    composer config repositories.ace-b2bregistration git https://github.com/durgagupta/b2bregistration.git
+    composer config repositories.ace-b2bregistration git https://github.com/durgagupta/magento2-b2bRegistration.git
     composer require ace/module-b2bregistration:dev-master
 
 
