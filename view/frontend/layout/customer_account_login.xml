@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
@@ -20,8 +20,8 @@
                        template="Magento_Customer::form/login.phtml">
                     <container name="form.additional.info" as="form_additional_info"/>
                 </block>
-                <block class="Ace\B2bRegistration\Block\Form\Login\Info" name="ace.customer.new"
-                       template="Ace_B2bRegistration::newcustomer.phtml"/>
+                <block class="Aceextensions\B2bRegistration\Block\Form\Login\Info" name="aceextensions.customer.new"
+                       template="Aceextensions_B2bRegistration::newcustomer.phtml"/>
             </container>
             <block class="Magento\Cookie\Block\RequireCookie" name="require-cookie"
                    template="Magento_Cookie::require_cookie.phtml">

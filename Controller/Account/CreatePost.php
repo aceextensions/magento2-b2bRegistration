@@ -1,14 +1,14 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Controller\Account;
+namespace Aceextensions\B2bRegistration\Controller\Account;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Customer\Model\Session;
@@ -28,7 +28,7 @@ use Magento\Customer\Model\CustomerExtractor;
 use Magento\Framework\Exception\StateException;
 use Magento\Framework\Exception\InputException;
 use Magento\Framework\Data\Form\FormKey\Validator;
-use Ace\B2bRegistration\Helper\Data;
+use Aceextensions\B2bRegistration\Helper\Data;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Framework\Translate\Inline\StateInterface;
 use Magento\Framework\Mail\Template\TransportBuilder;
@@ -38,11 +38,11 @@ use Psr\Log\LoggerInterface;
 use Magento\Customer\Model\Account\Redirect as AccountRedirect;
 use Magento\Customer\Helper\Address;
 use Magento\Store\Model\StoreManagerInterface;
-use Ace\B2bRegistration\Model\Config\Source\CustomerAttribute;
+use Aceextensions\B2bRegistration\Model\Config\Source\CustomerAttribute;
 
 /**
  * Class CreatePost
- * @package Ace\B2bRegistration\Controller\Account
+ * @package Aceextensions\B2bRegistration\Controller\Account
  */
 class CreatePost extends \Magento\Customer\Controller\AbstractAccount
 {
@@ -320,7 +320,7 @@ class CreatePost extends \Magento\Customer\Controller\AbstractAccount
             $this->saveGroupAttribute($customer);
 
             $this->_eventManager->dispatch(
-                'ace_customer_register_success',
+                'aceextensions_customer_register_success',
                 ['account_controller' => $this, 'customer' => $customer]
             );
             $customerEmail = $customer->getEmail();

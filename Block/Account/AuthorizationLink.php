@@ -1,19 +1,19 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Block\Account;
+namespace Aceextensions\B2bRegistration\Block\Account;
 
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Customer\Model\Url;
 use Magento\Framework\Data\Helper\PostHelper;
-use Ace\B2bRegistration\Helper\Data;
+use Aceextensions\B2bRegistration\Helper\Data;
 
 class AuthorizationLink extends \Magento\Customer\Block\Account\AuthorizationLink
 {
@@ -126,7 +126,7 @@ class AuthorizationLink extends \Magento\Customer\Block\Account\AuthorizationLin
      */
     public function checkForceLoginInstall ()
     {
-        return $this->moduleManager->isOutputEnabled('Ace_ForceLogin');
+        return $this->moduleManager->isOutputEnabled('Aceextensions_ForceLogin');
     }
 
     /**

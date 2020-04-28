@@ -1,30 +1,30 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Observer;
+namespace Aceextensions\B2bRegistration\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 
 class RedirectB2bUrl implements ObserverInterface
 {
     /**
-     * @var \Ace\B2bRegistration\Helper\Data
+     * @var \Aceextensions\B2bRegistration\Helper\Data
      */
     private $helper;
 
     /**
      * RedirectB2bUrl constructor.
-     * @param \Ace\B2bRegistration\Helper\Data $helper
+     * @param \Aceextensions\B2bRegistration\Helper\Data $helper
      */
     public function __construct (
-        \Ace\B2bRegistration\Helper\Data $helper
+        \Aceextensions\B2bRegistration\Helper\Data $helper
     ) {
         $this->helper = $helper;
     }

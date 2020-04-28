@@ -1,10 +1,10 @@
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 require([
     'jquery',

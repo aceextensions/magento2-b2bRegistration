@@ -1,22 +1,22 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Controller\Account;
+namespace Aceextensions\B2bRegistration\Controller\Account;
 
 use Magento\Customer\Model\Session;
 use Magento\Customer\Model\Registration;
-use Ace\B2bRegistration\Helper\Data;
+use Aceextensions\B2bRegistration\Helper\Data;
 
 /**
  * Class Create
- * @package Ace\B2bRegistration\Controller\Account
+ * @package Aceextensions\B2bRegistration\Controller\Account
  */
 class Create extends \Magento\Framework\App\Action\Action
 {
@@ -75,7 +75,7 @@ class Create extends \Magento\Framework\App\Action\Action
      */
     protected function _isAllowed ()
     {
-        return $this->_authorization->isAllowed('Ace_B2bRegistration::config_b2bregistration');
+        return $this->_authorization->isAllowed('Aceextensions_B2bRegistration::config_b2bregistration');
     }
 
     /**

@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="header.links">
-            <block class="Ace\B2bRegistration\Block\Account\AuthorizationLink" name="ace-authorization-link-login"
-                   template="Ace_B2bRegistration::authorization.phtml"/>
+            <block class="Aceextensions\B2bRegistration\Block\Account\AuthorizationLink" name="aceextensions-authorization-link-login"
+                   template="Aceextensions_B2bRegistration::authorization.phtml"/>
             <referenceBlock name="authorization-link-login" remove="true"/>
         </referenceBlock>
     </body>

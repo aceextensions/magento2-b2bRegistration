@@ -1,11 +1,11 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
 // @codingStandardsIgnoreFile
@@ -15,7 +15,7 @@
 /**
  * Create account form template
  *
- * @var \Ace\B2bRegistration\Block\CustomerRegister $block
+ * @var \Aceextensions\B2bRegistration\Block\CustomerRegister $block
  */
 ?>
 <?php
@@ -148,15 +148,15 @@ $vatDefault = $block->getVatFieldDefault();
         <?php endif ?>
 
         <?php if ($dobDefault == "req" || $block->getDateField()): ?>
-            <?php echo $block->getChildHtml('ace.register.dob') ?>
+            <?php echo $block->getChildHtml('aceextensions.register.dob') ?>
         <?php endif ?>
 
         <?php if ($taxDefault == "req" || $block->getTaxField()): ?>
-            <?php echo $block->getChildHtml('ace.register.taxvat') ?>
+            <?php echo $block->getChildHtml('aceextensions.register.taxvat') ?>
         <?php endif ?>
 
         <?php if ($genderDefault == "req" || $block->getGenderField()): ?>
-            <?php echo $block->getChildHtml('ace.register.gender') ?>
+            <?php echo $block->getChildHtml('aceextensions.register.gender') ?>
         <?php endif ?>
     </fieldset>
 
@@ -349,7 +349,7 @@ $vatDefault = $block->getVatFieldDefault();
         <?php echo $block->getChildHtml('form_additional_info'); ?>
     </fieldset>
 
-    <?php echo $block->getChildHtml('ace.form.additional.info'); ?>
+    <?php echo $block->getChildHtml('aceextensions.form.additional.info'); ?>
 
     <div class="actions-toolbar">
         <div class="primary">
@@ -366,7 +366,7 @@ $vatDefault = $block->getVatFieldDefault();
 <script type="text/x-magento-init">
     {
     "*": {
-        "Ace_B2bRegistration/js/validate": {}
+        "Aceextensions_B2bRegistration/js/validate": {}
         }
     }
 

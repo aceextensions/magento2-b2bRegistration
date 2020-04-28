@@ -1,26 +1,23 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="ace" translate="label" sortOrder="100">
-            <label>Abdulwahed</label>
-        </tab>
         <section id="b2bregistration" translate="label" sortOrder="222" showInDefault="1" showInWebsite="1"
                  showInStore="1">
             <class>separator-top</class>
             <label>B2B Registration</label>
-            <tab>ace</tab>
-            <resource>Ace_B2bRegistration::config_b2bregistration</resource>
+            <tab>aceextensions</tab>
+            <resource>Aceextensions_B2bRegistration::config_b2bregistration</resource>
             <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
                    showInStore="1">
                 <label>General Configuration</label>
@@ -119,7 +116,7 @@
                 <field id="customer_group" translate="label" type="select" sortOrder="15" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Default Customer Group</label>
-                    <source_model>Ace\B2bRegistration\Model\Config\Source\Group</source_model>
+                    <source_model>Aceextensions\B2bRegistration\Model\Config\Source\Group</source_model>
                 </field>
                 <field id="regular_registration" translate="label" type="select" sortOrder="16" showInDefault="1"
                        showInWebsite="1" showInStore="1">

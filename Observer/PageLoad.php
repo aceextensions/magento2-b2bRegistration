@@ -1,18 +1,18 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Observer;
+namespace Aceextensions\B2bRegistration\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 use Psr\Log\LoggerInterface;
-use Ace\B2bRegistration\Model\Config\Source\CustomerAttribute;
+use Aceextensions\B2bRegistration\Model\Config\Source\CustomerAttribute;
 
 class PageLoad implements ObserverInterface
 {
@@ -25,7 +25,7 @@ class PageLoad implements ObserverInterface
      */
     protected $customerRepositoryInterface;
     /**
-     * @var \Ace\B2bRegistration\Helper\Data
+     * @var \Aceextensions\B2bRegistration\Helper\Data
      */
     protected $helper;
     /**
@@ -37,13 +37,13 @@ class PageLoad implements ObserverInterface
      * PageLoad constructor.
      * @param \Magento\Customer\Model\Session $customerSession
      * @param \Magento\Customer\Api\CustomerRepositoryInterface $customerRepositoryInterface
-     * @param \Ace\B2bRegistration\Helper\Data $helper
+     * @param \Aceextensions\B2bRegistration\Helper\Data $helper
      * @param LoggerInterface $logger
      */
     public function __construct (
         \Magento\Customer\Model\Session $customerSession,
         \Magento\Customer\Api\CustomerRepositoryInterface $customerRepositoryInterface,
-        \Ace\B2bRegistration\Helper\Data $helper,
+        \Aceextensions\B2bRegistration\Helper\Data $helper,
         LoggerInterface $logger
     ) {
         $this->customerRepositoryInterface = $customerRepositoryInterface;

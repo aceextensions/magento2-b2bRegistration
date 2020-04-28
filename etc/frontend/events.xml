@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="controller_action_predispatch_cms_noroute_index">
-        <observer name="ace-create-account-page" instance="Ace\B2bRegistration\Observer\RedirectB2bUrl"/>
+        <observer name="aceextensions-create-account-page" instance="Aceextensions\B2bRegistration\Observer\RedirectB2bUrl"/>
     </event>
     <event name="customer_customer_authenticated">
-        <observer name="ace_login" instance="Ace\B2bRegistration\Observer\LoginObserver"/>
+        <observer name="aceextensions_login" instance="Aceextensions\B2bRegistration\Observer\LoginObserver"/>
     </event>
     <event name="customer_register_success">
-        <observer name="ace_register" instance="Ace\B2bRegistration\Observer\UpgradeStatusObserver"/>
+        <observer name="aceextensions_register" instance="Aceextensions\B2bRegistration\Observer\UpgradeStatusObserver"/>
     </event>
     <event name="controller_action_predispatch">
-        <observer name="ace_reload_page" instance="Ace\B2bRegistration\Observer\PageLoad"/>
+        <observer name="aceextensions_reload_page" instance="Aceextensions\B2bRegistration\Observer\PageLoad"/>
     </event>
 </config>

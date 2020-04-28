@@ -1,14 +1,14 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Helper;
+namespace Aceextensions\B2bRegistration\Helper;
 
 use Magento\Framework\App\Helper\Context;
 use Magento\Store\Model\ScopeInterface;
@@ -19,7 +19,7 @@ use Magento\Framework\Mail\Template\TransportBuilder;
 class Email extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**
-     * @var \Ace\CustomerApproval\Helper\Data
+     * @var \Aceextensions\CustomerApproval\Helper\Data
      */
     protected $helper;
     /**

@@ -1,14 +1,14 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Controller\Account;
+namespace Aceextensions\B2bRegistration\Controller\Account;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Customer\Model\Session;
@@ -20,14 +20,14 @@ use Magento\Customer\Helper\Address;
 use Magento\Framework\UrlFactory;
 use Magento\Framework\Controller\Result\Redirect;
 use Magento\Framework\Controller\ResultFactory;
-use Ace\B2bRegistration\Helper\Data;
+use Aceextensions\B2bRegistration\Helper\Data;
 use Magento\Customer\Model\Metadata\ElementFactory;
 use Magento\Framework\Exception\StateException;
-use Ace\B2bRegistration\Model\Config\Source\CustomerAttribute;
+use Aceextensions\B2bRegistration\Model\Config\Source\CustomerAttribute;
 
 /**
  * Class Confirm
- * @package Ace\B2bRegistration\Controller\Account
+ * @package Aceextensions\B2bRegistration\Controller\Account
  */
 class Confirm extends \Magento\Customer\Controller\Account\Confirm
 {
@@ -68,7 +68,7 @@ class Confirm extends \Magento\Customer\Controller\Account\Confirm
      */
     protected $resultFactory;
     /**
-     * @var Ace\CustomerApproval\Helper\Data
+     * @var Aceextensions\CustomerApproval\Helper\Data
      */
     protected $helper;
     /**

@@ -1,14 +1,14 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Controller\Adminhtml\Index;
+namespace Aceextensions\B2bRegistration\Controller\Adminhtml\Index;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Customer\Model\ResourceModel\Customer\CollectionFactory;
@@ -17,7 +17,7 @@ use Magento\Ui\Component\MassAction\Filter;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Psr\Log\LoggerInterface;
-use Ace\B2bRegistration\Model\Config\Source\CustomerAttribute;
+use Aceextensions\B2bRegistration\Model\Config\Source\CustomerAttribute;
 
 class MassDisapproved extends \Magento\Customer\Controller\Adminhtml\Index\AbstractMassAction
 {
@@ -98,6 +98,6 @@ class MassDisapproved extends \Magento\Customer\Controller\Adminhtml\Index\Abstr
      */
     protected function _isAllowed ()
     {
-        return $this->_authorization->isAllowed('Ace_B2bRegistration::b2bregistration_reject');
+        return $this->_authorization->isAllowed('Aceextensions_B2bRegistration::b2bregistration_reject');
     }
 }

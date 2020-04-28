@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
  -->
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -14,7 +14,7 @@
     <fieldset name="customer">
         <field name="b2b_activasion_status">
             <argument name="data" xsi:type="array">
-                <item name="options" xsi:type="object">Ace\B2bRegistration\Model\Config\Source\CustomerAttribute</item>
+                <item name="options" xsi:type="object">Aceextensions\B2bRegistration\Model\Config\Source\CustomerAttribute</item>
                 <item name="config" xsi:type="array">
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="dataType" xsi:type="string">text</item>

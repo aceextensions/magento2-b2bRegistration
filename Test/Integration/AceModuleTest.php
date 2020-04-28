@@ -1,22 +1,22 @@
 <?php
 
-namespace Ace\B2bRegistration\Observer;
+namespace Aceextensions\B2bRegistration\Observer;
 
 use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Framework\Module\ModuleList;
 use Magento\TestFramework\ObjectManager;
 
 /**
- * Class AceModuleTest
- * @package Ace\B2bRegistration\Observer
+ * Class AceextensionsModuleTest
+ * @package Aceextensions\B2bRegistration\Observer
  */
-class AceModuleTest extends \PHPUnit\Framework\TestCase
+class AceextensionsModuleTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
      * @var string
      */
-    private $moduleName = 'Ace_B2bRegistration';
+    private $moduleName = 'Aceextensions_B2bRegistration';
 
 
     /**

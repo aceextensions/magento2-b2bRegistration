@@ -1,17 +1,17 @@
 <?php
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 
-namespace Ace\B2bRegistration\Block;
+namespace Aceextensions\B2bRegistration\Block;
 
 use Magento\Framework\View\Element\Template\Context;
-use Ace\B2bRegistration\Helper\Data;
+use Aceextensions\B2bRegistration\Helper\Data;
 use Magento\Customer\Helper\Address;
 
 class CustomerRegister extends \Magento\Customer\Block\Form\Register

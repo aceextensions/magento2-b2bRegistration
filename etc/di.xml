@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Ace Extensions
+ * Aceextensions Extensions
  *
- * @category   Ace
- * @package    Ace_B2bRegistration
+ * @category   Aceextensions
+ * @package    Aceextensions_B2bRegistration
  * @author     Durga Shankar Gupta (dsguptas@gmail.com)
- * @copyright  Copyright (c) 2019 Ace Extensions ( http://aceextensions.com )
+ * @copyright  Copyright (c) 2019 Aceextensions Extensions ( http://aceextensions.com )
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Customer\Controller\Account\Confirm"
-                type="Ace\B2bRegistration\Controller\Account\Confirm"/>
+                type="Aceextensions\B2bRegistration\Controller\Account\Confirm"/>
     <type name="Magento\Customer\Controller\Account\LoginPost">
-        <plugin name="bs_change_customer_status" type="Ace\B2bRegistration\Plugin\LoginPost"/>
+        <plugin name="aceextensions_change_customer_status" type="Aceextensions\B2bRegistration\Plugin\LoginPost"/>
     </type>
     <type name="Magento\Customer\Block\Widget\Dob">
-        <plugin name="ace_change_dob_validate" type="Ace\B2bRegistration\Plugin\Dob"/>
+        <plugin name="aceextensions_change_dob_validate" type="Aceextensions\B2bRegistration\Plugin\Dob"/>
     </type>
     <type name="Magento\Customer\Model\EmailNotification">
-        <plugin name="ace_check_create_account_email" type="Ace\B2bRegistration\Plugin\EmailNotification"/>
+        <plugin name="aceextensions_check_create_account_email" type="Aceextensions\B2bRegistration\Plugin\EmailNotification"/>
     </type>
     <type name="Magento\Customer\Model\Metadata\Form">
-        <plugin name="ace_add_dob_field" type="Ace\B2bRegistration\Plugin\Form"/>
+        <plugin name="aceextensions_add_dob_field" type="Aceextensions\B2bRegistration\Plugin\Form"/>
     </type>
     <type name="Magento\Customer\Model\Registration">
-        <plugin name="ace_remove_regular_form" type="Ace\B2bRegistration\Plugin\Registration"/>
+        <plugin name="aceextensions_remove_regular_form" type="Aceextensions\B2bRegistration\Plugin\Registration"/>
     </type>
 </config>
