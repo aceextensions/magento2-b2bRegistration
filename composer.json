@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+            "aceextensions/ace-core": "^1.0.0"
+        },
     "autoload": {
         "files": [
             "registration.php"
