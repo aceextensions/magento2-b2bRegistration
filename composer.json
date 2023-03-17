@@ -2,7 +2,7 @@
     "name": "aceextensions/module-b2bregistration",
     "description": "",
     "type": "magento2-module",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Durga Shankar Gupta",
