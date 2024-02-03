@@ -13,7 +13,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="b2b" frontName="b2b">
-            <module name="Aceextensions_B2bRegistration"/>
+            <module name="Aceextensions_B2bRegistration" before="Magento_Cms"/>
         </route>
     </router>
 </config>
