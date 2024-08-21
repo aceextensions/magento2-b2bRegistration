@@ -2,22 +2,22 @@
 
 This extension supports separate retailer and wholesaler registration and also supports Magento's default general registration for the general group. It also supports wholesaler/retailer registration from the Magento register page
 
-## Main Functionalities
-* Enable/disable Additional B2B Registration functionality of the extension from the admin panel. 
-* Support enable/disable Email functionality of the whole module from the admin panel.    
-* Show Shortcut Of Registration Form In Top Menu
-* In Approval Settings, the admin can easily use `Status` like,
-    * Normal Account
-    * B2B Pending
-    * B2B Approval
-    * B2B Reject
+## Key Features
 
-* Give The Admin Time To Manage The Registrations
-* Approve New B2B Registrations Automatically
-* In B2B Customer, the admin can use functionality like,     
-    * Enable the B2B button for the enabling/disable button of the B2B registration in frontend.
-    * B2B button text for change text of the B2B button in frontend.
-    * Enable Tax/vat Field, Enable Address Fileds, Enable Gender Field, Enable Date of birth Field for enabling/disable from the B2B registration page.
+* **Toggle B2B Registration:** Easily enable or disable the Additional B2B Registration functionality directly from the admin panel.
+* **Email Functionality Control:** Manage the email functionality for the entire module with a simple enable/disable option from the admin panel.
+* **Quick Access:** Display a shortcut to the registration form in the top menu for easy access.
+* **Approval Settings:** Admins can manage approval statuses, including:
+  * Normal Account
+  * B2B Pending
+  * B2B Approval
+  * B2B Reject
+* **Registration Management:** Allow admins to efficiently manage and approve B2B registrations.
+* **Auto-Approval:** Option to automatically approve new B2B registrations.
+* **B2B Customer Features:** Admins can configure various B2B customer settings, such as:
+  * Enabling/disabling the B2B registration button on the frontend.
+  * Customizing the text for the B2B registration button.
+  * Enabling/disabling fields like Tax/VAT, Address, Gender, and Date of Birth on the B2B registration page.
 
 ## TODO
 #### Super User:
