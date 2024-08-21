@@ -11,9 +11,6 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
-    <event name="controller_action_predispatch_cms_noroute_index">
-        <observer name="aceextensions-create-account-page" instance="Aceextensions\B2bRegistration\Observer\RedirectB2bUrl"/>
-    </event>
     <event name="customer_customer_authenticated">
         <observer name="aceextensions_login" instance="Aceextensions\B2bRegistration\Observer\LoginObserver"/>
     </event>
